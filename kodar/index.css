@@ -248,14 +248,14 @@ img {
   padding: 0.2em;
 }
 
-main .bilder_galleri {
+ .bilder_galleri {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: .5em;
   margin-left: -.2em;
 }
 
-main .bilder_galleri_stadar {
+.bilder_galleri_stadar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: .5em;
@@ -299,6 +299,9 @@ footer {
     font-size: 1.1em;
   }
   .bilder_galleri {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bilder_galleri_stadar {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .rad_4 {
