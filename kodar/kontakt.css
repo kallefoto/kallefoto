@@ -6,7 +6,7 @@ html {
 body {
 font-family: "Lato", sans-serif;
 text-decoration: none;
-color: #232323;
+color: #FFF;
 overflow-x: hidden;
 max-width: 100vw;
 margin: 0;
@@ -153,7 +153,9 @@ nav a {
    margin-right: .3em;
    text-shadow: 1.5px 1.5px #23232350;
  }
-
+form label {
+  color: #FFF;
+}
  @media (max-width: 1366px) {
 
    h1 {

@@ -24,6 +24,26 @@ height: 100%;
   background: #232323;
 }
 
+nav {
+  padding: 1rem;
+  margin-top: 2rem;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav a {
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 1.5px 1.5px #23232350;
+}
+
 header {
   height: 85vh;
   width: 100%;
@@ -67,29 +87,6 @@ h1 {
   color: #232323;
   margin-top: .7em;
   margin-bottom: .5em;
-}
-
-
-
-nav {
-  padding: 1rem;
-  margin-top: 2rem;
-  width: auto;
-  display: inline-block;
-  text-align: center;
-  font-size: 1.3em;
-
-}
-
-nav ul {
-  display: inline-block;
-}
-
-nav a {
-  margin: 1.5rem;
-  text-decoration: none;
-  color: #FFF;
-  text-shadow: 1.5px 1.5px #23232350;
 }
 
 
