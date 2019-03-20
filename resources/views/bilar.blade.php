@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Kallefoto</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  </head>
+@extends('layouts.default')
 
-  <body>
+@section('title')
+  - Bilar
+@endsection
+
+@section('body')
 
 
   <header id="opp">
@@ -22,9 +16,8 @@
           <ul>
             <li style="list-style-type: none;"><a href="sogndal.html" class="understrek">Sogndal</a></li>
             <li style="list-style-type: none;"><a href="luster.html" class="understrek">Luster</a></li>
-            <li style="list-style-type: none;"><a href="leikanger.html" class="understrek">Leikanger</a></li>
-            <li style="list-style-type: none;"><a href="#" class="understrek">Balestrand</a></li>
-            <li style="list-style-type: none;"><a class="understrek" href="bilar.html">Bilar & Dyr</a></li>
+            <li style="list-style-type: none;"><a href="#" class="understrek">Leikanger</a></li>
+            <li style="list-style-type: none;"><a href="balestrand.html" class="understrek">Balestrand</a></li>
           </ul>
         </div>
       </div>
@@ -38,7 +31,7 @@
 
 <main id="ned">
 
-  <h2>Balestrand</h2>
+  <h2>Bilar og Dyr</h2>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -71,26 +64,4 @@
     <div class="pil_breidd"><a class="pil_a" href="#opp"><div class="fas fa-arrow-circle-up"></div></a></div>
   </main>
 
-
-  <footer>
-    <p>Kontakt meg på: kallebilde@gmail.com eller tlf 97194135. Alle rettigheitar tilhøyrer Karl Johan Ølnes</p>
-  </footer>
-
-  <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1200, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-  </script>
-
-  </body>
-</html>
+@endsection
